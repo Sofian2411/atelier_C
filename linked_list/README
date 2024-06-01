@@ -1,0 +1,8 @@
+Commandes Make:
+    - make: compile le fichier linked list et main et creer le fichier ll.
+    Executer avec ./ll
+    - make test: compile le fichier linked list et le fichier test. Attention,
+    necessite la presence de la lib de test Criterion (presente en session PIE)
+    Executer avec ./test
+    - make check: meme chose que make test, puis lance la testsuite
+    - make clean: efface les fichiers binaires/objet

@@ -1,0 +1,23 @@
+Comment compiler:
+    - Simplement:
+    gcc fichier.c -o fichier_binaire
+
+    - Avec des warnings:
+    gcc -Wall -Wextra -Werror fichier.c -o fichier_binaire
+
+    - Avec des options de debug
+    gcc -Wall -Wextra -Werror -fsanitize=address -g fichier.c -o fichier_binaire
+
+Utiliser Make:
+    - Recompiler tout les fichiers:
+    make
+
+    - Recompiler un executable (regarder Makefile pour nom des fichiers):
+    make nom_de_lexecutable
+    Ex :
+        make hello
+        make args
+        make structs...
+
+    - Effacer les fichier objet/binaires:
+    make clean
