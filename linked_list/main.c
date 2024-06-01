@@ -4,11 +4,13 @@
 // Helper function to print list
 void ll_print(List* list) {
     if (list == NULL) {
-        printf("List in NULL.\n");
+        printf("List is NULL.\n");
+        return;
     }
 
     if (list->size == 0) {
         printf("Empty list\n");
+        return;
     }
 
     for (Node* node = list->head; node != NULL; node = node->next) {
